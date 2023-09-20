@@ -2103,6 +2103,95 @@ button,
         right: -0.5em;
         top: 0; } }
 
+/* Quienes integramos Mundana*/
+.mautores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas flexibles */
+  gap: 20px; /* Espacio entre los autores */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mautor {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10%;
+
+}
+
+.mautor img {
+  margin-bottom: 10%;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .autor {
+      width: 100%; /* Cambia a ancho completo en pantallas pequeñas */
+  }
+} 
+
+
+/* Autores */
+.autores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.autor {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  display: flex; /* Utilizamos flexbox para alinear imagen y texto */
+  flex-direction: column; /* Coloca el texto debajo de la imagen por defecto */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.autor img {
+  margin: 2%;
+  max-width: 65% !important; 
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.autorname {
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  display: flex; /* Utilizamos flexbox para alinear imagen y texto */
+  flex-direction: column; /* Coloca el texto debajo de la imagen por defecto */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+
+/* Estilos adicionales para hacerlo responsive */
+@media (min-width: 768px) {
+  .autor {
+      width: auto;
+      margin: 2%;
+      flex-direction: row; /* Pone el texto al lado de la imagen en pantallas grandes */
+      justify-content: center;
+      align-items: center;
+  }
+
+  .autor p {
+      text-align: left; /* Alinea el texto a la izquierda en pantallas grandes */
+  }
+}
+
+  .autor a i {
+      margin: 25px; /* Espaciado entre los íconos */
+      font-size: 23px; /* Tamaño de los íconos */
+    
+}
+
+
 /* Banner-banner */       
 *{
     margin: 0;

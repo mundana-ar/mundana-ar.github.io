@@ -2000,10 +2000,19 @@ section.special, article.special {
 
   @media screen and (orientation: portrait) and (max-width: 655px) {
     .bg-image {
-      background-size: 70vh;
+      padding-right: 1em;
+      background-size: 65vh;
       margin-bottom: -35vh;
     }   
-    } 
+    }
+
+@media screen and (orientation: portrait) and (max-width: 535px) {
+    .bg-image {
+      padding-right: 1em;
+      background-size: 60vh;
+      margin-bottom: -40vh;
+    }   
+    }
 
  @media screen and (orientation: portrait) and (max-width: 480px) {
   .bg-image {
